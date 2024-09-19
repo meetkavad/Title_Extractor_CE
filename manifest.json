@@ -1,0 +1,20 @@
+{
+    "name": "Title Extracter",
+    "description": "Forgot your tab AND can't look at the top? We've got you covered!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "128": "icon.png"
+    }
+
+}

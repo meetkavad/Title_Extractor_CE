@@ -1,14 +1,18 @@
 {
-    "name": "Title Extracter",
-    "description": "Forgot your tab AND can't look at the top? We've got you covered!",
+    "name": "LinkedIn Data Extracter",
+    "description": "Extracts data from LinkedIn",
     "version": "1.0",
     "manifest_version": 3,
     "background": {
-        "service_worker": "background.js"
+        "service_worker": "background.js",
+        "type": "module"
     },
     "permissions": [
         "activeTab",
         "scripting"
+    ],
+    "host_permissions":[
+        "https://www.linkedin.com/in/*"
     ],
     "action": {
         "default_popup": "popup.html"
@@ -16,5 +20,4 @@
     "icons": {
         "128": "icon.png"
     }
-
 }

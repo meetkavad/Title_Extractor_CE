@@ -6,13 +6,21 @@
 <body>
     <div class="popup-wrapper">
         
-        <h1>Get LinkedIn Data!!</h1>
-        <h3>to us...</h3>
-        <button class="extract-button">Scrape</button>
+        <h1>LinkedIn Bot</h1>
+        <h3>Do Automatic Likes and Comments...</h3>
+        
+        <form id="bot-form">
+            <label for="like-count">Number of Likes</label>
+            <input type="number" name="like-count" id="like-count" required>
+            
+            <label for="comment-count">Number of Comments</label>
+            <input type="number" name="comment-count" id="comment-count" required>
+            
+            <button type="submit" class="action-button" >Take Action</button>
+        </form>
 
     </div>
     
     <script type="module" src="popup.js"></script>
-    
 </body>
 </html>
